@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <p class="logo"> My Portfolio </p>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Project</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="btn">Hire Me</a>
+        </nav>
+    </div>
+    <div class="detail">
+        <h1>Hey, I'm <span>Joel Agyekum Annor</span></h1>
+        <p>This is  My Portfolio,here you can see all the details about
+             me as a Computer Engeneering Student and the work I've done as a web developer.
+              
+             The reason why is i chose this course is because;
+             Since I was a child, I have always been fascinated by the world of technology.
+                I have always been curious about how things work and how they are made.
+                I have always been interested in learning new things and trying new things
+                Like Software Development, Web Development, and Programming.
+
+
+        </p>
+        <a href="#"class="btn">Download C.V</a>
+    </div>
+    <div class="image">
+        <img src="man.pag"alt="">
+    </div>
+    <footer>
+        <div class="socials">
+            <box-icon name='instagram' type='logo' ></box-icon>
+            <box-icon type='logo' name='facebook-circle'></box-icon>
+            <box-icon type='logo' name='twitter'></box-icon>
+            <box-icon type='logo' name='linkedin-square'></box-icon>
+        </div>
+    </footer>
+</body>
+    <style>
+        div{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+        .hero{
+            width: 100%;
+            height: 50vh;
+            background-color: #eff4fd;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 100px;
+        }
+        .logo{
+            font-size: 36px;
+            color: rgb(15, 15, 239 );
+            font-weight: 800;
+            cursor: pointer;
+            transition: 0,3s ease;
+        }
+        .logo:hover{
+            transition: scale(1.1);
+        }
+        nav ul li{
+            display: inline-block;
+            padding: 10px 20px;
+        }
+        nav ul li a{
+            color: #1d1d24;
+            position: relative;
+            padding: 5px 0;
+            font-size: bold;
+            font-size: 20px;
+            transition: 0.2s ease;
+        }
+        nav ul li a:hover{
+            color: rgb(19,89, 242);
+        }
+        nav u li a::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 0%;
+            background-color: black;
+            transition: 0.3s ease;
+        }
+        nav ul li a:hover::after{
+            width: 100%;
+        }
+        .btn{
+            color: white;
+            text-transform: uppercase;
+            background-color: rgb(15, 15, 239 );
+            padding: 10px 30px;
+            border-radius: 2em;
+            display: inline-block;
+            font-weight: 500;
+            transition: all.4s ease;
+             border: 2px solid rgb(15, 15, 239 );
+        }
+        .btn:hover{
+            background: transparent;
+            color: rgb(15, 15, 239 );
+        }
+
+        .detail{
+            position: absolute;
+            top: 35%;
+            left: 8%;
+        }
+        .detail h1{
+            color: #1d1d24;
+            font-size: 70px;
+            font-weight: 700;
+            line-height: 70px;
+        }
+        .detail h1 span{
+            color: rgb(15, 15, 239 );
+        } 
+        .detail p{
+            color: #1d1d24;
+            font-size: 24px;
+            width: 500px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+    </style>
